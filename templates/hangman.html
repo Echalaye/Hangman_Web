@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/hangman.css">
+    <title>Hangman-Web</title>
+</head>
+
+<body>
+    <a href="/" class="return">⬅</a>
+    <h1 class="start">Hangman-Web</h1>
+    <h2 class="word">{{.Ton_affichage}}</h2>
+    <div class="container">
+        <h2 class="tentatives"> Il vous reste {{.Tentatives}} tentatives.</h2>
+        <form method="POST" action="/hangman">
+            <input pattern="[a-zA-Z]*" type="text" name="answer" class="Writing" required autofocus
+                placeholder="Type letter/word" autocomplete="off">
+            <input type="submit" value="Send" class="button">
+        </form>
+    </div>
+</body>
+
+</html>

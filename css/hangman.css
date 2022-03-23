@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    text-align: center;
+    background-color: #545353;
+}
+
+.return {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #F0C929;
+    box-shadow: 0 5px 0 #F48B29;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 45px;
+    border-radius: 12px;
+    text-align: center;
+    transition: background-color .5s;
+    border: none;
+    line-height: 23px;
+    height: 60px;
+    font-size: 1.25em;
+}
+
+.return:focus {
+    box-shadow: none;
+    top: 20px;
+    background-color: #F48B29;
+}
+
+.Writing {
+    padding: 15px 20px;
+    font-size: 25px;
+    width: 16%;
+    text-transform: uppercase;
+    border-style: solid;
+    border: 5px solid #F48B29;
+    border-radius: 12px;
+    background-color: #545353;
+    color: white;
+}
+
+.start{
+    font-size: 100px;
+    text-align: center;
+    text-decoration: solid;
+    background: -webkit-linear-gradient(#F0C929, #F48B29);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: .5em;
+}
+
+.button {
+    margin-top: 2em;
+    background-color: #F0C929;
+    box-shadow: 0 5px 0 #F48B29;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 45px;
+    border-radius: 12px;
+    text-align: center;
+    transition: background-color .5s;
+    border: none;
+}
+
+.button:focus {
+    box-shadow: none;
+    margin-bottom: -5px;
+    margin-top: calc(2em + 5px);
+    background-color: #F48B29;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.tentatives {
+    text-decoration: solid;
+    background: -webkit-linear-gradient(#F0C929, #F48B29);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+}
+
+.container {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.word {
+    text-align: center;
+    text-decoration: solid;
+    background: -webkit-linear-gradient(#F0C929, #F48B29);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 75px;
+    margin-top: 13%;
+}
+
+form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
